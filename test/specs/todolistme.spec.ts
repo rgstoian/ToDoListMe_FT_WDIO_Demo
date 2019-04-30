@@ -6,7 +6,6 @@ const currentDateTime = new Date().toISOString();
 
 describe('ToDoListMe', () => {
     beforeEach('Prepare environment', () => {
-
         LoginPage.performLogin();
         Lists.createNewList('WDIO TC ' + TCnumber + ' ' + currentDateTime);
         TCnumber++;

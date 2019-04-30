@@ -68,6 +68,8 @@ class Login extends BasePage {
         browser.waitUntil(() => {
             return this.syncIcon.getAttribute('title') === 'Lists synced';
         }, 15000);
+
+        // reload session to ensure a clean slate for every test run
         browser.reloadSession();
     }
 }
